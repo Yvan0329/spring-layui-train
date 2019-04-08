@@ -1,0 +1,119 @@
+.accordion {
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	list-style: none;
+	background: #2f4050;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+.accordion ul {
+	padding-left: 30px;
+	display: none;
+	list-style: none;
+}
+
+/*菜单项样式*/
+.accordion a {
+	display: block;
+	padding:8px;
+	cursor: pointer;
+	color: #a7b1c2;
+	text-decoration: none;
+}
+
+.accordion > li > a {
+	padding:15px;
+}
+
+.accordion .iconfont {
+	margin-right:10px;
+}
+
+.accordion a > i {
+	margin-top:3px;
+}
+
+.accordion .arrow {
+	float:right;
+}
+
+/*菜单项悬浮样式*/
+.accordion li>a:hover {
+	color:#FFFFFF;
+}
+
+/*一级菜单项鼠标悬浮样式*/
+.accordion > li > a:hover {
+	background-color: #293846;
+}
+
+/*选中菜单项样式*/
+.accordion .focus-item > a {
+	color:#FFFFFF;
+}
+
+/*一级菜单项选中样式*/
+.accordion > .focus-item {
+	background-color: #293846;
+}
+
+.accordion > li {
+	border-left: 4px solid transparent;
+}
+
+/*展开的一级菜单样式*/
+.accordion > .sub-menu-expand {
+	border-left: 4px solid #19aa8d;
+	background-color: #293846;
+	color:#FFFFFF;
+	/*-webkit-transition: all 0.5s;
+	transition: all 0.5s;*/
+}
+
+/*展开的子菜单样式*/
+.accordion .sub-menu-expand > a {
+	color:#FFFFFF;
+}
+
+.expand-menu {
+	height:60px;
+	display:none;
+	text-align:center;
+	color:#EEE;
+	line-height: 60px;
+	font-size:16px;
+}
+.expand-menu a.toggle {
+	position:absolute;
+	right:15px;
+}
+
+@media screen and (max-width: 600px){
+	.sidebar {
+		width:100%;
+		right:0px;
+		z-index:999;
+		bottom:inherit;
+	}
+	.logo-wrapper {
+		display:none;
+	}
+	.expand-menu {
+		display:block;
+	}
+	.menu-wrapper {
+		position:static;
+		display:none;
+	}
+	.main-body {
+		left:0px;
+		top:60px;
+		bottom: 0px;
+	}
+	.footer {
+		display:none;
+	}
+}

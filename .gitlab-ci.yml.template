@@ -1,0 +1,25 @@
+stages:
+   - build
+   - deploy
+build:
+  stage: build
+  script:
+    - cp target/admin-demo-web*.war ci/ROOT.war
+    - cd ci
+    - docker build -t unicorn/admin-demo-web:1.0.0 .
+  tags:
+    - test
+deploy:
+   stage: deploy
+   script:
+#      - docker stop shike-customer-deployment
+#      - docker rm shike-customer-deployment
+      - docker login --username=caiyagang@163.com registry.cn-shenzhen.aliyuncs.com -p TopCode2017...
+      - docker tag unicorn/shike-customer-deployment:1.0.4 registry.cn-shenzhen.aliyuncs.com/topcode/shike-customer-deployment:1.0.4
+      - docker push registry.cn-shenzhen.aliyuncs.com/topcode/shike-customer-deployment:1.0.4
+      - docker run -p 58084:8080 -p 22881:50880 --name shike-customer-deployment -d unicorn/shike-customer-deployment:1.0.4 "192.168.1.235"
+   environment:
+      name: Docker Test Environment
+      url: http://192.168.1.235:58084
+   tags:
+      - test

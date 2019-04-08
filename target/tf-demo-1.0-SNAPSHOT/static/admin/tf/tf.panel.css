@@ -1,0 +1,53 @@
+.tpanel {
+	/*border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0 0;*/
+}
+.tpanel .panel-title {
+	position:relative;
+	height:44px;
+	background-color: #fff;
+    margin-bottom: 0;
+    padding-left: 15px;
+    line-height: 44px;
+}
+.tpanel .panel-title h5 {
+	display: inline-block;
+    font-size: 14px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    /*float: left;*/
+    color:#666;
+    font-weight: bold;
+	line-height: 44px;
+}
+.tpanel .panel-title h5 span {
+	font-size:75%;
+	font-weight: normal;
+	margin-left:10px;
+}
+.tpanel .panel-title .tool {
+	position:absolute;
+	right:15px;
+}
+.tpanel .panel-title .tool a {
+	text-decoration: none;
+	color:#BBB;
+	font-weight: bold;
+	margin-right:3px;
+}
+.tpanel .panel-title .tool a .iconfont {
+	font-size:14px;
+}
+.tpanel .panel-content {
+	background-color: #fff;
+    color: inherit;
+    /*border-color: #e7eaec;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;*/
+}

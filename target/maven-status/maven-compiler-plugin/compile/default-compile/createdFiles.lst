@@ -1,0 +1,6 @@
+cn/xyvan/domain/vo/TrainVo.class
+cn/xyvan/domain/entity/Train.class
+cn/xyvan/domain/form/TrainForm.class
+cn/xyvan/mapper/TrainMapper.class
+cn/xyvan/web/controller/TrainController.class
+cn/xyvan/service/TrainService.class

@@ -1,0 +1,97 @@
+body {
+    font-family: "open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#676a6c;
+}
+.form-inline label {
+    color:#666;
+    font-weight: normal;
+    padding-left:10px;
+}
+
+.btn {
+    padding-left:25px;
+    padding-right:25px;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #19aa8d;
+    border-color: #19aa8d;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #19aa8d;
+    border-color: #19aa8d;
+}
+.btn-primary:hover {
+    background: #19aa8d;
+    border-color: #19aa8d;
+}
+.btn-primary {
+    background: #19aa8d;
+    border-color: #19aa8d;
+    outline: none;
+}
+.form-control, .single-line {
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    -webkit-transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
+}
+.form-control:focus {
+    border-color: #19aa8d;
+}
+
+
+.create-page .container-fluid {
+    background:#FFF;
+    padding:20px;
+}
+
+.create-page .form-horizontal .form-group {
+    border-top:1px dashed #E0DCDC;
+    padding-top : 30px;
+    padding-bottom: 30px;
+    margin:0px;
+}
+.create-page .check-label {
+    color:#666;
+    font-weight: normal;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.create-page .check-label > div {
+    margin-right:10px;
+}
+.create-page .form-horizontal .control-label {
+    color:#666;
+}
+.create-page  .title {
+    border-bottom: 1px solid #DDD;
+    color:#666;
+}
+.create-page  .form-horizontal .form-group-first {
+    border:none;
+}
+
+span.unchecked {
+    color:red;
+    position:absolute;
+    font-size:12px;
+    padding:3px;
+    padding-left:10px;
+}
+
+.pagination {
+    margin:0;
+}
+
+.tpanel {
+    padding-bottom:20px;
+}
